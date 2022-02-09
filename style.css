@@ -413,7 +413,6 @@ h2, #soustitre_accueil{
         transform: scale(0.7);
     }
 
-
     .containergif{
         height: 150px;
     }
@@ -552,7 +551,7 @@ h2, #soustitre_accueil{
 }
 
 #dlUIUX{
-    margin: auto;
+    margin: 200px;
 }
 
 #dlGraph{
