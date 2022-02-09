@@ -551,11 +551,13 @@ h2, #soustitre_accueil{
 }
 
 #dlUIUX{
-    margin: auto;
+    margin-left : 230px;
+    max-width: 170px;
 }
 
 #dlGraph{
-    margin: auto;
+    margin-left : 230px;
+    max-width: 170px;
 }
 
 #titre_reseaux{
