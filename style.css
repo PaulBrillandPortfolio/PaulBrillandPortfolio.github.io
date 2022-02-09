@@ -253,12 +253,6 @@ h2, #soustitre_accueil{
     margin-left: 100px;
 }
 
-/* #cercle1{
-    position: relative;
-    background-color: #5CFF8D;
-    border-radius: 50%;
-} */
-
 #citation{
     margin-top: -230px;
     margin-left: 450px;
@@ -312,14 +306,21 @@ h2, #soustitre_accueil{
     font-size: 36px;
 }
 
+/* ----------------- */
+
 #gallery_illustration{
-    margin: 10px 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 #gallery_illustration img{
     transition: 1s;
     padding: 15px;
     width: 333px;
+    grid-column: 1 / 3;
+    grid-row: 2;
 }
 
 #gallery_illustration img:hover{
@@ -327,15 +328,44 @@ h2, #soustitre_accueil{
     transform: scale(1.1);
 }
 
+/* ----------------- */
+
+#gallery_interface{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+#gallery_interface img{
+    width: 550px;
+    transition: 1s;
+    padding: 15px;
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+#gallery_interface img:hover{
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}
+
+/* ----------------- */
+
 #gallery_video{
-    margin-left: 130px;
-    padding: 10px 230px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .miniavideo{
     width: 360px;
     transition: 1s;
     padding: 15px;
+    grid-column: 1 / 3;
+    grid-row: 2;
 }
 
 .miniavideo:hover{
@@ -343,35 +373,98 @@ h2, #soustitre_accueil{
     filter: grayscale(100%);
 }
 
-#gallery_interface{
-    margin-left: 0px;
-    padding: 10px 100px;
-}
-
-.miniainterface{
-    width: 550px;
-    transition: 1s;
-    padding: 25px;
-}
-
-.miniainterface:hover{
-    transform: scale(1.1);
-    filter: grayscale(100%);
-}
+/* ----------------- */
 
 #gallery_autres{
-    padding: 10px 230px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .miniaautres{
     width: 360px;
     transition: 1s;
     padding: 15px;
+    grid-column: 1 / 3;
+    grid-row: 2;
 }
 
 .miniaautres:hover{
     transform: scale(1.1);
     filter: grayscale(100%);
+}
+
+/* ----------------- */
+
+@media only screen and (max-width: 1460px) {
+    body {
+        background-color: lightblue;
+    }
+
+    header>nav{
+        display: none;
+    }
+    
+    #gallery_illustration, #gallery_video, #gallery_autres{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #gallery_interface{
+        transform: scale(0.7);
+    }
+
+
+    .containergif{
+        height: 150px;
+    }
+    .containergif:hover{
+        transform: scale(0.76);
+    }
+
+    .dl{
+        display: none;
+    }
+}
+
+/* ----------------- */
+
+@media only screen and (max-width: 900px) {
+    body {
+        background-color: blue;
+    }
+    #gallery_illustration{
+        grid-template-columns: repeat(1, 1fr);
+        width: 350px;
+    }
+
+    #gallery_interface, #gallery_video, #gallery_autres{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    
+    #gallery_interface img{
+        transform: scale(1);
+        width: 500px;
+        transition: 1s;
+        padding: 15px;
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+    
+    #gallery_interface img:hover{
+        transform: scale(1.1);
+        filter: grayscale(100%);
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
+    #titre_accueil, #soustitre_accueil{
+        font-size: 50px;
+    }
 }
 
 #titre_cv{
@@ -387,6 +480,14 @@ h2, #soustitre_accueil{
     font-size: 36px;
 }
 
+#containercv{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
 .containergif{
     display: flex;
     align-items: center;
@@ -399,10 +500,9 @@ h2, #soustitre_accueil{
 }
 
 #UIUX{
-    margin-top: 100px;
-    margin-left: -700px;
-    height: 400px;
-    width: 650px;
+    margin: 50px;
+    height: 300px;
+    width: 600px;
     background:url(images/hand.gif);
     background-size: 650px 400px;
     font-size: 120px;
@@ -413,10 +513,9 @@ h2, #soustitre_accueil{
 }
 
 #Graphiste{
-    margin-top: -400px;
-    margin-left: 700px;
-    height: 400px;
-    width: 650px;
+    margin: 50px;
+    height: 300px;
+    width: 600px;
     background:url(images/street.gif);
     background-size: 650px 400px;
     font-size: 120px;
@@ -453,14 +552,11 @@ h2, #soustitre_accueil{
 }
 
 #dlUIUX{
-    margin-top: -34px;
-    margin-left: -700px;    
+    margin: auto;
 }
 
 #dlGraph{
-    position: relative;
-    margin-top: -54px;
-    margin-left: 700px;
+    margin: auto;
 }
 
 #titre_reseaux{
@@ -803,14 +899,14 @@ input:focus, textarea:focus {
    background: url(http://www.jordancundiff.com/wp-content/uploads/2014/03/icon-dropdown.png) no-repeat right;
    }
 
-@media only screen and ( min-width: 768px ) and ( max-width: 1035px ) {
+/* @media only screen and ( min-width: 768px ) and ( max-width: 1035px ) {
   h1 { font-size: 80px; }
   form { width: 736px !important; }
     #wpcf7-f156-p143-o1\20 formwrap > form > p > span.wpcf7-form-control-wrap.Subject.flat > select, #wpcf7-f156-p143-o1\20 formwrap > form > p > span.wpcf7-form-control-wrap.Subject.flat { width: 731px !important; }
     .nameinput, .emailinput, #wpcf7-f156-p143-o1\20 formwrap > form > p > span.wpcf7-form-control-wrap.Message > textarea { width: 666px !important; }
-}
+} */
 
-@media only screen and ( max-width: 804px ) {
+@media only screen and ( max-width: 1000px ) {
     h1 { font-size: 50px; }
   form { width: 450px !important; }
    #wpcf7-f156-p143-o1\20 formwrap > form > p > span.wpcf7-form-control-wrap.Subject.flat > select, #wpcf7-f156-p143-o1\20 formwrap > form > p > span.wpcf7-form-control-wrap.Subject.flat { width: 445px !important; }
