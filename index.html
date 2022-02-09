@@ -15,15 +15,17 @@
 <body>
     <header>
         <a id="logo" href="#accueil">Paul BRILLAND</a>
-        <ul id="sectionsheader">            
-           <li class="headli"><a href="english.html">en</a></li>
-           <li>|</li>
-           <li class="headli"><a href="#contact">Contact</a></li>
-           <li class="headli"><a href="#reseaux">Réseaux sociaux</a></li>
-           <li class="headli"><a href="#cv">Curriculum Vitæs</a></li>
-           <li class="headli"><a href="#creations">Créations</a></li>
-           <li class="headli" id="headpres"><a href="#presentation">Présentation</a></li> 
-        </ul>    
+        <nav>
+            <ul id="sectionsheader">            
+               <li class="headli"><a href="english.html">en</a></li>
+               <li>|</li>
+               <li class="headli"><a href="#contact">Contact</a></li>
+               <li class="headli"><a href="#reseaux">Réseaux sociaux</a></li>
+               <li class="headli"><a href="#cv">Curriculum Vitæs</a></li>
+               <li class="active"><a href="#creations">Créations</a></li>
+               <li class="headli" id="headpres"><a href="#presentation">Présentation</a></li> 
+            </ul>   
+        </nav>
     </header>
 
     <section id="accueil">
@@ -156,14 +158,16 @@
 
     <section id="cv">
         <h2 id="titre_cv">Curriculum Vitæs</h2>
-        <div class="containergif">
-            <div id="UIUX"><a href="downloads/CV Paul BRILLAND UIUX.pdf" download="CV Paul BRILLAND UI/UX Designer">UI/UX<br/> Designer</a></div>
+        <div id="containercv">
+            <div class="containergif">
+                <div id="UIUX"><a href="downloads/CV Paul BRILLAND UIUX.pdf" download="CV Paul BRILLAND UI/UX Designer">UI/UX<br/> Designer</a></div>
+            </div>
+            <div class="containergif">
+                <div id="Graphiste"><a href="downloads/CV Paul BRILLAND Graphiste.pdf" download="CV Paul BRILLAND Designer Graphique">Design<br/> Graphique</a></div>
+            </div>
+            <div class="dl" id="dlUIUX"><a href="downloads/CV Paul BRILLAND UIUX.pdf" download="CV Paul BRILLAND UI/UX Designer"><p>Télécharger</p></a><img class="imgdl" src="images/icons/dl.svg" alt="" height="30px" width="30px"></div>
+            <div class="dl" id="dlGraph"><a href="downloads/CV Paul BRILLAND Graphiste.pdf" download="CV Paul BRILLAND Designer Graphique"><p>Télécharger</p></a><img class="imgdl" src="images/icons/dl.svg" alt="" height="30px" width="30px"></div>
         </div>
-        <div class="containergif">
-            <div id="Graphiste"><a href="downloads/CV Paul BRILLAND Graphiste.pdf" download="CV Paul BRILLAND Designer Graphique">Design<br/> Graphique</a></div>
-        </div>
-        <div class="dl" id="dlUIUX"><a href="downloads/CV Paul BRILLAND UIUX.pdf" download="CV Paul BRILLAND UI/UX Designer">Télécharger</a><img class="imgdl" src="images/icons/dl.svg" alt="" height="30px" width="30px"></div>
-        <div class="dl" id="dlGraph"><a href="downloads/CV Paul BRILLAND Graphiste.pdf" download="CV Paul BRILLAND Designer Graphique"><p>Télécharger</p></a><img class="imgdl" src="images/icons/dl.svg" alt="" height="30px" width="30px"></div>
     </section>
 
     <section id="reseaux">
@@ -219,7 +223,7 @@
         </ul>
         <ul id="contactfooter">
             <li class="mailto"><a href="mailto:paul-brilland@orange.fr"><img class="iconfooter" src="https://img.icons8.com/ios-filled/50/ffffff/apple-mail.png" height="25px" width="25px"/> paul-brilland@orange.fr</a></li>
-            <li><img class="iconfooter" src="https://img.icons8.com/ios-filled/50/ffffff/apple-phone.png" height="25px" width="25px"/> +33 7 82 47 74 49</li>
+            <li class="mailto"><a href="tel:+33782477449"><img class="iconfooter" src="https://img.icons8.com/ios-filled/50/ffffff/apple-phone.png" height="25px" width="25px"/> +33 7 82 47 74 49</a></li>
         </ul>
     </footer>
 </body>
