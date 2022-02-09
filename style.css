@@ -398,9 +398,9 @@ h2, #soustitre_accueil{
 /* ----------------- */
 
 @media only screen and (max-width: 1460px) {
-    body {
+    /* body {
         background-color: lightblue;
-    }
+    } */
 
     header>nav{
         display: none;
@@ -428,9 +428,9 @@ h2, #soustitre_accueil{
 /* ----------------- */
 
 @media only screen and (max-width: 900px) {
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
     #gallery_illustration{
         grid-template-columns: repeat(1, 1fr);
         width: 350px;
